@@ -32,9 +32,6 @@ Step 3 — Predicting using our trained Model-
 As we can see, the trained apple detection model is able to detect all the apples in
 the image as well as identify the apple with a defect (apple with a spot). You can use
 this trained model to count apples.
-The code used to predict images can be accessed in the file "detection_and_classification.ipynb"
-
- ![alt text](https://github.com/Tajamul21/Detection-Classification-and-Semantic_Segmentation-of-apples/blob/main/Predicted%20images(Detection%20and%20Classification)/sample5.jpg)
 
 Semantic Segmentation:
 
@@ -44,10 +41,6 @@ pixel in the image, this task is commonly referred to as dense prediction.
 Unlike the previous tasks, the expected output in semantic segmentation are not just
 labels and bounding box parameters. The output itself is a high resolution image (typically of the same size as input image) in which each pixel is classified to a particular
 class. Thus it is a pixel level image classification.
-The data set used for Segmentation can be found here “https://arxiv.org/abs/1909.06441”
-The model for Semantic Segmentation of Apple is given in the file “Semantic segmentation.ipynb”
-
-![alt text](https://github.com/Tajamul21/Detection-Classification-and-Semantic_Segmentation-of-apples/blob/main/Predicted%20Segmented%20Images/sample2.png)
 
 U-Net:
 U-Net is an architecture for semantic segmentation. It consists of a contracting path and an expansive path. The contracting path follows the typical architecture of a convolutional network. It consists of the repeated application of two 3x3 convolutions (unpadded convolutions), each followed by a rectified linear unit (ReLU) and a 2x2 max pooling operation with stride 2 for downsampling. At each downsampling step we double the number of feature channels. Every step in the expansive path consists of an upsampling of the feature map followed by a 2x2 convolution (“up-convolution”) that halves the number of feature channels, a concatenation with the correspondingly cropped feature map from the contracting path, and two 3x3 convolutions, each followed by a ReLU.
